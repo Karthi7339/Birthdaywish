@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D6A85F" />
+      <stop offset="100%" stop-color="#FAD9C1" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(59,48,53,0.08)"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#grad)" />
+
+  <!-- Subtle geometric / bokeh patterns -->
+  <circle cx="120" cy="100" r="140" fill="white" opacity="0.15" />
+  <circle cx="700" cy="500" r="180" fill="white" opacity="0.12" />
+  <circle cx="680" cy="80" r="70" fill="white" opacity="0.18" />
+  <circle cx="100" cy="520" r="90" fill="white" opacity="0.1" />
+
+  <!-- Center Card Frame -->
+  <rect x="70" y="60" width="660" height="480" rx="28" fill="rgba(255,255,255,0.75)" stroke="rgba(214,168,95,0.3)" stroke-width="2" filter="url(#shadow)" />
+
+  <!-- Sparkle stars -->
+  <path d="M 200 130 Q 200 150 180 150 Q 200 150 200 170 Q 200 150 220 150 Q 200 150 200 130 Z" fill="#D6A85F" opacity="0.75" />
+  <path d="M 620 420 Q 620 435 605 435 Q 620 435 620 450 Q 620 435 635 435 Q 620 435 620 420 Z" fill="#D6A85F" opacity="0.75" />
+
+  <!-- Inner Content -->
+  <g transform="translate(400, 240)" text-anchor="middle">
+    <!-- Emoji Circle -->
+    <circle cx="0" cy="-30" r="54" fill="rgba(255,255,255,0.9)" stroke="rgba(214,168,95,0.3)" stroke-width="1.5" />
+    <text x="0" y="-12" font-size="48" font-family="'Apple Color Emoji','Segoe UI Emoji',sans-serif">✨</text>
+
+    <!-- Title -->
+    <text x="0" y="65" font-family="'Playfair Display', Georgia, serif" font-size="34" font-weight="700" fill="#3B3035">Lifetime Of Memories</text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="105" font-family="'Inter', -apple-system, sans-serif" font-size="18" font-weight="400" fill="rgba(59,48,53,0.7)" letter-spacing="1">To forever and always</text>
+
+    <!-- Badge / Note -->
+    <rect x="-140" y="140" width="280" height="34" rx="17" fill="rgba(214,168,95,0.18)" stroke="rgba(214,168,95,0.3)" stroke-width="1"/>
+    <text x="0" y="162" font-family="'Inter', -apple-system, sans-serif" font-size="13" font-weight="500" fill="#3B3035" letter-spacing="0.5">✦ REPLACE WITH YOUR PHOTO ✦</text>
+  </g>
+</svg>
